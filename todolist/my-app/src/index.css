@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: auto;
+  height: 100%;
+  background-image: url('./img/fon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.wrapper {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 100px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow-y: scroll;
+}
+::-webkit-scrollbar { width: 8px; }
+
+::-webkit-scrollbar-track {
+  background: #f7efef;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(70, 130, 180);
+  border-radius: 5px;
+}
+.Notes {
+  width: 400px;
+  margin: auto;
+  font-size: 25px;
+  padding: 20px 0;
+}
+.Notes-Note {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin: 15px auto;
+  padding: 0 15px;
+  cursor: default;
+  user-select: none;
+}
+.Notes-Create-Input {
+  width: 100%;
+  resize: none;
+  overflow: auto;
+  outline: none;
+}
+.Notes-Create {
+  width: 100%;
+  margin: 30px auto;
+}
+
+.Notes-Create-Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Notes-Create-Button {
+  font-weight: 600;
+  border: none;
+  border-radius: 2px;
+  padding: 9px 18px;
+  color: white;
+  cursor: pointer;
+  border-color: #FDBE33 #000 #D77206;
+  transition: 0.2s;
+  background: rgb(14, 172, 14);
+}
+.Notes-Create-Button-reset {
+  background: rgb(232, 42, 42);
+}
+.Notes-Note-Delete {
+  width: 16px;
+  height: 16px;
+  background-image: url(./img/close.png);
+  cursor: pointer;
+}
+.Notes-Note-Correct {
+  width: 16px;
+  height: 16px;
+  background-image: url(./img/correct.png);
+  cursor: pointer;
+}
+.Notes-Note-Checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
